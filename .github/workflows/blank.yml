@@ -1,0 +1,13 @@
+name: second-scheduled
+
+on:
+  schedule: 
+    - cron: "0 0 * * *"
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: schedule
+        run: echo "Schedule is in progress"
